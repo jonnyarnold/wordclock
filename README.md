@@ -28,7 +28,7 @@ We needed [all of this](https://raw.githubusercontent.com/jonnyarnold/wordclock/
 ## Instructions
 
 * Start by testing that you can turn on LEDs with your Arduino. The [pintest.ino](https://github.com/jonnyarnold/wordclock/blob/master/inos/pintest.ino) file is useful for this. You will need the [Arduino Software](http://arduino.cc/en/Main/Software). [(pic)](https://raw.githubusercontent.com/jonnyarnold/wordclock/master/pictures/2_led_test.jpg)
-* Print off the stencil clockface.ods. It doesn't fit on one A4 sheet so you're likely to need to stick two sheets together.
+* Print off the stencil [clockface.ods](https://github.com/jonnyarnold/wordclock/blob/master/clockface.ods). It doesn't fit on one A4 sheet so you're likely to need to stick two sheets together.
 * Cut out the stencil (this takes a while) and use it to sketch in where each letter will go onto one side of your corkboard. [(pic)](https://raw.githubusercontent.com/jonnyarnold/wordclock/master/pictures/3_stencil_cork.jpg)
 * Place LEDs into the corkboard, with the legs poking out the other side. Depending on how many you have you're likely to want to share LEDs between letters. I'd recommend having one for every 2-3 letters. [(in progress)](https://raw.githubusercontent.com/jonnyarnold/wordclock/master/pictures/4_cork_frame.jpg) [(done)](https://raw.githubusercontent.com/jonnyarnold/wordclock/master/pictures/5_cork.jpg)
 * Wire up the LEDs to the Arduino. Remember that you only have as many pins as there are distinct words on the clock, so you will need to attach LEDs for the same word in parallel to the I/O pins. (If the LEDs are attached in parallel they all have the same current, and hence brightness.)

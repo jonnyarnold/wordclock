@@ -27,7 +27,7 @@ We needed [all of this](https://raw.githubusercontent.com/jonnyarnold/wordclock/
 
 ## Instructions
 
-* Start by testing that you can turn on LEDs with your Arduino. The pintest.ino file is useful for this. You will need the [Arduino Software](http://arduino.cc/en/Main/Software). [(pic)](https://raw.githubusercontent.com/jonnyarnold/wordclock/master/pictures/2_led_test.jpg)
+* Start by testing that you can turn on LEDs with your Arduino. The [pintest.ino](https://github.com/jonnyarnold/wordclock/blob/master/inos/pintest.ino) file is useful for this. You will need the [Arduino Software](http://arduino.cc/en/Main/Software). [(pic)](https://raw.githubusercontent.com/jonnyarnold/wordclock/master/pictures/2_led_test.jpg)
 * Print off the stencil clockface.ods. It doesn't fit on one A4 sheet so you're likely to need to stick two sheets together.
 * Cut out the stencil (this takes a while) and use it to sketch in where each letter will go onto one side of your corkboard. [(pic)](https://raw.githubusercontent.com/jonnyarnold/wordclock/master/pictures/3_stencil_cork.jpg)
 * Place LEDs into the corkboard, with the legs poking out the other side. Depending on how many you have you're likely to want to share LEDs between letters. I'd recommend having one for every 2-3 letters. [(in progress)](https://raw.githubusercontent.com/jonnyarnold/wordclock/master/pictures/4_cork_frame.jpg) [(done)](https://raw.githubusercontent.com/jonnyarnold/wordclock/master/pictures/5_cork.jpg)
@@ -38,7 +38,7 @@ We needed [all of this](https://raw.githubusercontent.com/jonnyarnold/wordclock/
 * Attach the hinge to the two frames, ensuring the corkboard sits in place between them when closed.
 * Make partitions from the corrugated cardboard to separate the words. Attach these to the frame. You want these to be just the right size (between the corkboard and the front stencil). If it is too thin then light from one word will flood into another when lit. If it is too thick then the clock won't close properly.
 * Glue tracing paper to the front of the corrugated cardboard partitions. Try to get boundaries of the paper between the letters, rather than on them. [(pic)](https://raw.githubusercontent.com/jonnyarnold/wordclock/master/pictures/7_tracing.jpg)
-* Set the configuration at the top of the wordclock.ino file to the time you will power on the Arduino.
+* Set the configuration at the top of the [wordclock.ino](https://github.com/jonnyarnold/wordclock/blob/master/inos/wordclock.ino) file to the time you will power on the Arduino.
 * Pop in the power supply and turn it on at the right time!
 
 ## What We Would Have Done Differently

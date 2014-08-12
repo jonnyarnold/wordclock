@@ -1,10 +1,24 @@
-// Constants used later on
+// WORDCLOCK.INO
+// Use the Arduino as a word clock.
+
+// CONFIGURATION
+
+// currentHourPinIndex keeps track of which hour pin (as defined in hourPins) is lit
+// 0 = "one", 1 = "two", etc.
+int currentHourPinIndex = 8;
+
+// currentMinutePinsIndex does a similar job to currentHourPinsIndex.
+// 0 = "o'clock", 1 = "five past", ... , 
+// 5 = "twenty five past", 6 = "half past", 7 = "twenty five to", etc.
+int currentMinuteSequenceIndex = 1;
+
+// CONSTANTS
 
 // This constant is used as a 'null';
 // The code will ignore this value when it is found
 int pinNoPin = -1;
 
-// Pin numbers
+// Pin numbers (specific to each Arduino)
 int pinMinFive = 5;
 int pinMinTen = 1;
 int pinMinQuarter = 7;
@@ -69,10 +83,6 @@ int hourPins[] = {
 };
 int numberOfHourPins = 12;
 
-// currentHourPinIndex keeps track of which hour pin (as defined in hourPins) is lit
-// This defaults to index 11 (Twelve)
-int currentHourPinIndex = 8;
-
 // Minute pins are more tricky. The following array shows the sequence of minute pins
 // to light up. pinNoPin is used to fill out the arrays, and should be ignored when
 // looping over them.
@@ -94,9 +104,6 @@ int numberOfMinuteSequences = 12;
 
 // Change the hour when the minute hits the following index
 int hourChangeIndex = 7;
-
-// currentMinutePinsIndex does a similar job to currentHourPinsIndex
-int currentMinuteSequenceIndex = 1;
 
 void setup() {
   // Setup all pins as output

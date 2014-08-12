@@ -1,3 +1,6 @@
+// PINTEST.INO
+// Turns on all of the pins.
+
 int pins[] = {
   0,
   1,
@@ -21,9 +24,7 @@ int pins[] = {
   23
 };
 int numberOfPins = 20;
-int onPin = 0;
 
-// the setup routine runs once when you press reset:
 void setup() {                
   // initialize the digital pin as an output.
   for(int pinIdx = 0; pinIdx < numberOfPins; pinIdx++) {
@@ -32,6 +33,5 @@ void setup() {
   }
 }
 
-// the loop routine runs over and over again forever:
 void loop() {
 }
